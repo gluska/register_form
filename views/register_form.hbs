@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formularz rejestracji użytkownika</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    {{!-- ================ podpięcia CSS =================--}}
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+   
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap"> 
+ 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+   
+   <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+   
+    {{!-- my custom styles (optional)--}}
+    <link rel="stylesheet" type="text/css" href="./../assets/scss/register.css">
+   
+  
+  </head>
+  <body>
+      
+<div class="container">
+ <div class="row"> {{!--cały formularz jako 1 wiersz --}}
+ <div class="col-md-6"> {{!--szerokośc formularza 6/12 kolumn --}}
+<form action="" method="post" id="fileForm" role="form" class="needs-validation" novalidate >
+  
+<fieldset>
+  {{!-- poniżej  opis formularza --}}
+  <legend class="text-center">Wypełnij formularz rejestracji </legend>
+ 
+  {{!-- poniżej pole do wprowadzenia imienia --}}
+<div class="form-group"> 
+<label for="firstname">Imię<span class="req">* </span>: </label>
+<input type="text" class="form-control"  name="firstname" id = "txt" onkeyup = "Validate(this)" title="Min. 2 znaki, bez znaków specjalnych" required /> 
+<div id="errFirst"></div>   
+<div class="valid-feedback">Wygląda dobrze! </div> 
+</div>
+ 
+  {{!-- poniżej pole do wprowadzenia nazwiska --}}
+<div class="form-group">
+<label for="lastname">Nazwisko<span class="req">* </span> : </label> 
+<input type="text" class="form-control"  name="lastname" id = "txt" onkeyup = "Validate(this)" title="Min. 2 znaki, bez znaków specjalnych" required />  
+<div id="errLast"></div>
+<div class="valid-feedback">Wygląda dobrze! </div> 
+</div>
+ 
+{{!-- poniżej pole do wprowadzenia adresu email --}}
+<div class="form-group">
+<label for="email">Email <span class="req">* </span>: </label> 
+<input type="text" class="form-control" required  name="email" id = "email"  placeholder="adam@gmail.com" onchange="email_validate(this.value);" />   
+<div class="emailStatus" id="emailStatus"></div>
+<div class="valid-feedback">Wygląda dobrze! </div> 
+</div>
+ 
+ {{!-- poniżej pole do wprowadzenia loginu --}}
+<div class="form-group">
+<label for="username">Nazwa użytkownika<span class="req">*</span> : <small>To będzie Twój login</small> </label> 
+<input type="text" class="form-control"  name="username" id = "txt" onkeyup = "Validate(this)" placeholder="minimum 6 liter" required />  
+<div id="errLast"></div>
+<div class="invalid-feedback">Proszę wprowadzić nazwę użytkownika.</div>
+<div class="valid-feedback">Wygląda dobrze! </div> 
+</div>
+
+ {{!-- poniżej pole do wprowadzenia hasła - 2x --}}
+<div class="form-group">
+<label for="password">Hasło<span class="req">*</span> : </label>
+<input id="pass1" type="password" required name="password"  class="form-control inputpass" minlength="4" maxlength="16" title="Min. 4 znaki, max 16 znaków" placeholder="Wprowadź hasło" /> 
+
+<label for="password">Potwierdź hasło<span class="req">*</span> : </label>
+<input id="pass2" type="password" required name="password"  class="form-control inputpass" minlength="4" maxlength="16" placeholder="Wprowadź hasło ponownie - dla potwierdzenia" onkeyup="checkPass(); return false;" />
+<span id="confirmMessage" class="confirmMessage"></span>
+</div>
+ 
+ {{!-- poniżej pole do wprowadzenia nr telefonu --}}
+<div class="form-group">
+<label for="phonenumber">Nr telefonu<span class="req">*</span> : </label>
+<input type="text" required  name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="spokojnie, nie będzie użyty dla celów marketingowych"/> 
+<div class="valid-feedback">Wygląda dobrze! </div> 
+</div>
+
+
+
+{{!-- ================================================================= --}}
+<div class="form-group" >
+ 
+ {{!-- ustalenie daty rejestracji aby przekazać ją do bazy --}}
+{{!-- <?php //$date_entered = date('m/d/Y H:i:s'); ?> --}}
+<input type="hidden" value="<?php //echo $date_entered; ?>" name="dateregistered">
+<input type="hidden" value="0" name="activate" />
+<hr>
+</div>
+ 
+<div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Zapoznałem się z  <a href="terms.php" title="Proszę się zapoznać z warunkami klikając w ten link">warunkami</a> i wyrażam zgodę. <span class="req">* </span>
+      </label>
+      <div class="invalid-feedback">
+        Musisz wyrazić zgodę na warunki.
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+ {{!-- ================================================================= --}}
+<div class="form-group">
+<input class="btn btn-success" type="submit" name="submit_reg" value="Zarejestruj">
+</div>
+<p class="comments"><span class="req">* </span>pola wymagane do uzupełnienia</p>
+<p class="comments">Otrzymasz wiadomość email z instrukcjami jak aktywować konto. </p>
+<p class="comments">Sprawdź czy email nie trafił do folderu Spam. </p>
+ 
+ 
+</fieldset>
+</form><!-- ------------------------------------- ends register form -->
+ 
+
+
+
+ 
+
+</div><!-- ends col-6 -->
+<div class="col-md-6">
+<a href="/" class="home_link"><i class="fas fa-home"></i> Home</a> {{!-- powrót do strony głównej --}}
+</div>
+
+ 
+
+
+
+
+
+</div> {{!-- end of  row --}}
+</div>  {{!-- end of  container --}}
+
+
+{{!-- -------------------------    js scripts   ----------------------------- --}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"> </script>
+
+  <!-- Library we are trying to use today -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  
+  <!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  
+  {{!-- linked my custom scripts (optional) --}}
+  <script src="./../js/register.js"></script>
+
+
+  </body>
+
+
+</html>

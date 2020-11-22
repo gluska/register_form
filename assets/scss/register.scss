@@ -1,0 +1,59 @@
+body {
+    padding-top:50px;
+    background-color: aqua;
+}
+fieldset {
+    border: thin solid #ccc; 
+    border-radius: 4px;
+    padding: 20px;
+    padding-left: 40px;
+    background: #fbfbfb; //tło formularza
+}
+legend {
+   color: #678;
+   //border: thin solid rgb(172, 11, 11); 
+   border-radius: 4px;
+   width:inherit;
+   background: #fbfbfb;
+   padding:0 10px; /* To give a bit of padding on the left and right */
+   border-bottom:none;
+}
+.form-control {
+    width: 95%;
+    background-color: white;
+    height: auto;
+}
+label small {
+    color: #678 !important;
+}
+
+// dla gwiazdki przy elementach wymaganych
+span.req {
+    color:red;
+    font-size: 112%;
+}
+
+.home_link{
+    float: right;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    background-color: beige;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+}
+.comments{
+    font-size: 0.7rem;
+}
+// .emailStatus{
+//     font-size: 0.8rem;
+//     // color: red;
+// }
+
+.warning{
+    font-size: 0.8rem;
+    color: red;
+}
+.valid{
+    font-size: 0.8rem;
+    color: green;
+}

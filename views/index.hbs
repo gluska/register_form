@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Grzegorz Łuska">
+  <title>System rezerwacji lotów</title>
+  
+  <link rel="stylesheet" type="text/css" href="./../assets/scss/logout.css">
+  <link rel="stylesheet" type="text/css" href="./../assets/scss/airplanes.css">
+  <link rel="stylesheet" type="text/css" href="./../assets/scss/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap"> 
+</head>
+<body>
+<nav>
+<button id="reg-btn">Rejestracja</button>
+<button id="log-btn">Logowanie</button>
+</nav>
+
+  <div class="footer">Footer <br><br>
+    <button id="test1-btn">Test przekazanie nazwy samolotu</button>
+    <button id="test10-btn">Test pobranie zarezerwowanych miejsc</button>
+    <button id="test11-btn">Test aktualizacja zarezerwowanych miejsc</button>
+    {{!-- <button id="test2-btn">Test update zarezerwowanych miejsc</button> --}}
+  </div>
+<div>
+  <div id="output_BE" style="width: 280px; background-color: lightyellow">Zarezerwowane miejsca: </div>
+  <p id="output" style="width: 80px; background-color: lightgreen">{{ wsadNode }}</p>
+   <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1300">
+
+<rect id="A2_S" x="50" y="0" class="freeFC_BOM" width="100" height="100" rx="5" ry="5" />
+<rect id="C2_S" x="50" y="120" class="freeFC_BOM" width="100" height="100" rx="5" ry="5" />
+<rect id="D2_S" x="50" y="240" class="freeFC_BOM" width="100" height="100" rx="5" ry="5" />
+  </svg>
+  <form action="/booked" method="GET" >
+    <label for="name">Podaj imię i nazwisko:
+            <input type="submit">
+      </label>
+   </form>
+
+</div>
+
+  {{!-- <form action="/applications" method="POST" >
+    <label for="name">Podaj imię i nazwisko:</label>
+      <input type="text" name="name">
+      <input type="submit">
+   </form> --}}
+  {{!-- <h2>formMessage</h2> --}}
+
+<script   src="./../js/index.js"></script>
+</body>
+
+</html>

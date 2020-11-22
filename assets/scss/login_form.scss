@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(47, 154, 254, 0.65);
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+   // text-align: center;
+
+}
+
+.form_st{
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
+h1{
+    color: white;
+    margin-bottom: 30px;
+}
+.form-group, .btn-primary{
+    margin-left: 20px;
+}
+.home_link{
+font-size: 2rem;
+float: right;
+margin: 10px 30px 10px 0px;
+}

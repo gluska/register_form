@@ -1,0 +1,549 @@
+/*airplanes styling*/
+
+/* ============ general settings ==================== */
+#Bombardier{
+	position: absolute;
+	top: 30vh;
+	/* left: 18vw; */
+	/* / */
+	width: 70vw;
+	/* height: 80vh; */
+
+	height: 50vh;
+	/* max-height: 30vh; */
+	/* margin-top: 5vw; */
+	/* margin-left: 5vw; */
+	/* padding-top: 10vh; */
+	
+	/* transform: translate(100px, 100px); */
+	/* transform: rotate(270deg); */
+	/* border:solid thick brown;  */
+	z-index: 0;
+}
+	
+
+#B737{
+	position: absolute;
+	top: 30vh;
+	/* left: -200px; */
+	max-width: 70vw;
+	width: 70vw;
+	height: 50vh;
+	/* border:solid thick blueviolet; 	 */
+	}
+
+#B757{
+	position: absolute;
+	top: 30vh; 
+	
+	max-width:70vw;	
+	width: 70vw;
+	height: 50vh;
+	/* border:solid thick green;  */
+	}
+
+
+
+/* ========================================================================================= */
+/* ======================== Bombardier ===================================================== */
+
+.btn_text_BOM{
+	fill:#FFA500; font-family:Arial; font-size:1rem; font-weight:bold; text-anchor:middle; alignment-baseline:central;
+}
+.freeFC_BOM{fill: rgb(12, 77, 12)}/*First Class- Bombardier*/
+.freeEP_BOM{fill:   rgb(10, 172, 10)}/*Economy Plus- Bombardier*/
+.freeE_BOM{fill: 	rgb(176, 240, 116)}/*Economy Class- Bombardier*/
+
+.bom_st0{clip-path:url(#SVGID_3_);} 
+.bom_st1{clip-path:url(#SVGID_7_);}
+.bom_st2{clip-path:url(#SVGID_12_);}
+.bom_st3{clip-path:url(#SVGID_13_);}
+.bom_st4{clip-path:url(#SVGID_14_);fill:lightgrey;}/* dziób i obrys */
+.bom_st5{clip-path:url(#SVGID_17_);} 
+.bom_st6{clip-path:url(#SVGID_18_);fill:#FFFFFF;} /*pokład tło */
+.bom_st8{fill-rule:evenodd;clip-rule:evenodd;}
+.bom_st9, .bom_st10{fill:#E5E5E5;} /* skrzydła */
+.bom_st11{opacity:0.85;}
+.bom_st12{fill:#333333;} /* kolor wszystkich napisów*/
+.bom_st22{clip-path:url(#SVGID_33_);}
+.bom_st24{clip-path:url(#SVGID_37_);}
+.bom_st25{clip-path:url(#SVGID_38_);fill:#FFFFFF;}
+.bom_st26{clip-path:url(#SVGID_40_);fill:#FFFFFF;}
+.bom_st27{clip-path:url(#SVGID_55_);}
+.bom_st28{clip-path:url(#SVGID_56_);fill:#FFFFFF;}
+.bom_st29{clip-path:url(#SVGID_59_);}
+.bom_st30{clip-path:url(#SVGID_60_);fill:#FFFFFF;}
+.bom_st31{clip-path:url(#SVGID_63_);}
+.bom_st32{clip-path:url(#SVGID_64_);fill:#FFFFFF;}
+.bom_st33{clip-path:url(#SVGID_67_);}
+.bom_st34{clip-path:url(#SVGID_68_);fill:B000FF;}
+.bom_st35{clip-path:url(#SVGID_71_);}
+.bom_st36{clip-path:url(#SVGID_72_);fill:#FFFFFF;}
+.bom_st37{clip-path:url(#SVGID_75_);}
+.bom_st38{clip-path:url(#SVGID_76_);fill:#FFFFFF;}
+.bom_st39{clip-path:url(#SVGID_79_);}
+.bom_st40{clip-path:url(#SVGID_80_);fill:#FFFFFF;}
+.bom_st41{clip-path:url(#SVGID_83_);}
+.bom_st42{clip-path:url(#SVGID_84_);fill:#FFFFFF;}
+.bom_st43{clip-path:url(#SVGID_87_);}
+.bom_st44{clip-path:url(#SVGID_88_);fill:#FFFFFF;}
+.bom_st45{clip-path:url(#SVGID_91_);}
+.bom_st46{clip-path:url(#SVGID_92_);fill:#FFFFFF;}
+.bom_st47{clip-path:url(#SVGID_95_);}
+.bom_st48{clip-path:url(#SVGID_96_);fill:#FFFFFF;}
+.bom_st49{clip-path:url(#SVGID_99_);}
+.bom_st50{clip-path:url(#SVGID_100_);fill:#FFFFFF;}
+.bom_st51{clip-path:url(#SVGID_103_);}
+.bom_st52{clip-path:url(#SVGID_104_);fill:#FFFFFF;}
+.bom_st53{clip-path:url(#SVGID_106_);fill:#FFFFFF;}
+/*----------------exits ------------------*/
+.bom_st54{clip-path:url(#SVGID_110_);fill:red;}
+.bom_st55{clip-path:url(#SVGID_112_);fill:red;}
+.bom_st56{clip-path:url(#SVGID_114_);fill:red;}
+.bom_st57{clip-path:url(#SVGID_116_);fill:red;}
+.bom_st58{clip-path:url(#SVGID_118_);fill:red;}
+.bom_st59{clip-path:url(#SVGID_120_);fill:red;}
+.bom_st60{clip-path:url(#SVGID_122_);fill:red;}
+.bom_st61{clip-path:url(#SVGID_124_);fill:red;}
+
+/* ============================================================================================= */
+/* =========================== Boeing 737 ==================================================== */
+.btn_economy{
+	fill: 	rgb(176, 240, 116);
+	stroke:grey;stroke-width:2;
+	fill-opacity:0.8;
+}
+.freeEP{fill:   rgb(10, 172, 10)}/*Economy Plus*/
+.freeFC{fill: rgb(12, 77, 12)}/*First Class*/
+.freeTT{fill: purple !important} 
+
+
+.st0{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+.st1{clip-path:url(#SVGID_4_);fill:#BBD0E6;}
+.st2{clip-path:url(#SVGID_6_);fill:#BED2E7;}
+.st3{clip-path:url(#SVGID_8_);fill:#C0D4E8;}
+.st4{clip-path:url(#SVGID_10_);fill:#C3D6E9;}
+.st5{clip-path:url(#SVGID_12_);fill:#C6D7EA;}
+.st6{clip-path:url(#SVGID_14_);fill:#C8D9EB;}
+.st7{clip-path:url(#SVGID_16_);fill:#CBDBEC;}
+.st8{clip-path:url(#SVGID_18_);fill:#CDDCED;}
+.st9{clip-path:url(#SVGID_20_);fill:#CFDEED;}
+.st10{clip-path:url(#SVGID_22_);fill:#D1DFEE;}
+.st11{clip-path:url(#SVGID_24_);fill:#D3E1EF;}
+.st12{clip-path:url(#SVGID_26_);fill:#D6E2F0;}
+.st13{clip-path:url(#SVGID_28_);fill:#D8E4F0;}
+.st14{clip-path:url(#SVGID_30_);fill:#D9E5F1;}
+.st15{clip-path:url(#SVGID_32_);fill:#DBE6F2;}
+.st16{clip-path:url(#SVGID_34_);fill:#DDE8F3;}
+.st17{clip-path:url(#SVGID_36_);fill:#DFE9F3;}
+.st18{clip-path:url(#SVGID_38_);fill:#E1EAF4;}
+.st19{clip-path:url(#SVGID_40_);fill:#E2EBF4;}
+.st20{clip-path:url(#SVGID_42_);fill:#E4ECF5;}
+.st21{clip-path:url(#SVGID_44_);fill:#E5EDF6;}
+.st22{clip-path:url(#SVGID_46_);fill:#E7EEF6;}
+.st23{clip-path:url(#SVGID_48_);fill:#E8EFF7;}
+.st24{clip-path:url(#SVGID_50_);fill:#EAF0F7;}
+.st25{clip-path:url(#SVGID_52_);fill:#EBF1F8;}
+.st26{clip-path:url(#SVGID_54_);fill:#ECF2F8;}
+.st27{clip-path:url(#SVGID_56_);fill:#EDF3F9;}
+.st28{clip-path:url(#SVGID_58_);fill:#EFF4F9;}
+.st29{clip-path:url(#SVGID_60_);fill:#F0F4F9;}
+.st30{clip-path:url(#SVGID_62_);fill:#F1F5FA;}
+.st31{clip-path:url(#SVGID_64_);fill:#F2F6FA;}
+.st32{clip-path:url(#SVGID_66_);fill:#F3F7FA;}
+.st33{clip-path:url(#SVGID_68_);fill:#F4F7FB;}
+.st34{clip-path:url(#SVGID_70_);fill:#F5F8FB;}
+.st35{clip-path:url(#SVGID_72_);fill:#F5F8FB;}
+.st36{clip-path:url(#SVGID_74_);fill:#F6F9FC;}
+.st37{clip-path:url(#SVGID_76_);fill:#F7F9FC;}
+.st38{clip-path:url(#SVGID_78_);fill:#F8FAFC;}
+.st39{clip-path:url(#SVGID_80_);fill:#F8FAFD;}
+.st40{clip-path:url(#SVGID_82_);fill:#F9FBFD;}
+.st41{clip-path:url(#SVGID_84_);fill:#F9FBFD;}
+.st42{clip-path:url(#SVGID_86_);fill:#FAFCFD;}
+.st43{clip-path:url(#SVGID_88_);fill:#FBFCFD;}
+.st44{clip-path:url(#SVGID_90_);fill:#FBFCFE;}
+.st45{clip-path:url(#SVGID_92_);fill:#FBFDFE;}
+.st46{clip-path:url(#SVGID_94_);fill:#FCFDFE;}
+.st47{clip-path:url(#SVGID_96_);fill:#FCFDFE;}
+.st48{clip-path:url(#SVGID_98_);fill:#FDFDFE;}
+.st49{clip-path:url(#SVGID_100_);fill:#FDFEFE;}
+.st50{clip-path:url(#SVGID_102_);fill:#FDFEFE;}
+.st51{clip-path:url(#SVGID_104_);fill:#FDFEFE;}
+.st52{clip-path:url(#SVGID_106_);fill:#FEFEFF;}
+.st53{clip-path:url(#SVGID_108_);fill:#FEFEFF;}
+.st54{clip-path:url(#SVGID_110_);fill:#FEFEFF;}
+.st55{clip-path:url(#SVGID_112_);fill:#FEFEFF;}
+.st56{clip-path:url(#SVGID_114_);fill:#FEFFFF;}
+.st57{clip-path:url(#SVGID_116_);fill:#FFFFFF;}
+.st58{clip-path:url(#SVGID_118_);fill:#FFFFFF;}
+.st59{clip-path:url(#SVGID_120_);fill:#FFFFFF;}
+.st60{clip-path:url(#SVGID_122_);fill:#FFFFFF;}
+.st61{clip-path:url(#SVGID_124_);fill:#FFFFFF;}
+.st62{clip-path:url(#SVGID_126_);fill:#FFFFFF;}
+.st63{clip-path:url(#SVGID_128_);fill:#FFFFFF;}
+.st64{clip-path:url(#SVGID_130_);fill:#FFFFFF;}
+.st65{clip-path:url(#SVGID_132_);fill:#FFFFFF;}
+.st66{clip-path:url(#SVGID_134_);fill:#FFFFFF;}
+.st67{clip-path:url(#SVGID_136_);fill:#FFFFFF;}
+.st68{clip-path:url(#SVGID_138_);fill:#FFFFFF;}
+.st69{clip-path:url(#SVGID_140_);fill:#FFFFFF;}
+.st70{clip-path:url(#SVGID_142_);fill:#FFFFFF;}
+.st71{clip-path:url(#SVGID_144_);fill:#FFFFFF;}
+.st72{clip-path:url(#SVGID_146_);fill:#FFFFFF;}
+.st73{clip-path:url(#SVGID_148_);fill:#FFFFFF;}
+.st74{clip-path:url(#SVGID_150_);fill:#FFFFFF;}
+.st75{clip-path:url(#SVGID_152_);fill:#FFFFFF;}
+.st76{clip-path:url(#SVGID_154_);fill:#FFFFFF;}
+.st77{clip-path:url(#SVGID_156_);fill:#FFFFFF;}
+.st78{clip-path:url(#SVGID_158_);fill:#FFFFFF;}
+.st79{clip-path:url(#SVGID_160_);fill:#FFFFFF;}
+.st80{clip-path:url(#SVGID_162_);fill:#FFFFFF;}
+.st81{clip-path:url(#SVGID_164_);fill:#FFFFFF;}
+.st82{clip-path:url(#SVGID_166_);fill:#FFFFFF;}
+.st83{clip-path:url(#SVGID_168_);fill:#FFFFFF;}
+.st84{clip-path:url(#SVGID_170_);fill:#FFFFFF;}
+.st85{clip-path:url(#SVGID_172_);fill:#FFFFFF;}
+.st86{clip-path:url(#SVGID_174_);fill:#FFFFFF;}
+.st87{clip-path:url(#SVGID_176_);fill:#FFFFFF;}
+.st88{clip-path:url(#SVGID_178_);fill:#FFFFFF;}
+.st89{clip-path:url(#SVGID_180_);fill:#FFFFFF;}
+.st90{clip-path:url(#SVGID_182_);fill:#FFFFFF;}
+.st91{clip-path:url(#SVGID_184_);fill:#FFFFFF;}
+.st92{clip-path:url(#SVGID_186_);fill:#FFFFFF;}
+.st93{clip-path:url(#SVGID_188_);fill:#FFFFFF;}
+.st94{clip-path:url(#SVGID_190_);fill:#FFFFFF;}
+.st95{clip-path:url(#SVGID_192_);fill:#FEFFFF;}
+.st96{clip-path:url(#SVGID_194_);fill:#FEFFFF;}
+.st97{clip-path:url(#SVGID_196_);fill:#FEFEFF;}
+.st98{clip-path:url(#SVGID_198_);fill:#FEFEFF;}
+.st99{clip-path:url(#SVGID_200_);fill:#FEFEFF;}
+.st100{clip-path:url(#SVGID_202_);fill:#FEFEFF;}
+.st101{clip-path:url(#SVGID_204_);fill:#FEFEFE;}
+.st102{clip-path:url(#SVGID_206_);fill:#FDFEFE;}
+.st103{clip-path:url(#SVGID_208_);fill:#FDFEFE;}
+.st104{clip-path:url(#SVGID_210_);fill:#FDFDFE;}
+.st105{clip-path:url(#SVGID_212_);fill:#FCFDFE;}
+.st106{clip-path:url(#SVGID_214_);fill:#FCFDFE;}
+.st107{clip-path:url(#SVGID_216_);fill:#FBFDFE;}
+.st108{clip-path:url(#SVGID_218_);fill:#FBFCFE;}
+.st109{clip-path:url(#SVGID_220_);fill:#FAFCFD;}
+.st110{clip-path:url(#SVGID_222_);fill:#FAFBFD;}
+.st111{clip-path:url(#SVGID_224_);fill:#F9FBFD;}
+.st112{clip-path:url(#SVGID_226_);fill:#F8FAFD;}
+.st113{clip-path:url(#SVGID_228_);fill:#F8FAFC;}
+.st114{clip-path:url(#SVGID_230_);fill:#F7F9FC;}
+.st115{clip-path:url(#SVGID_232_);fill:#F6F9FC;}
+.st116{clip-path:url(#SVGID_234_);fill:#F5F8FB;}
+.st117{clip-path:url(#SVGID_236_);fill:#F3F7FB;}
+.st118{clip-path:url(#SVGID_238_);fill:#F2F6FA;}
+.st119{clip-path:url(#SVGID_240_);fill:#F1F5FA;}
+.st120{clip-path:url(#SVGID_242_);fill:#EFF4F9;}
+.st121{clip-path:url(#SVGID_244_);fill:#EEF3F9;}
+.st122{clip-path:url(#SVGID_246_);fill:#ECF2F8;}
+.st123{clip-path:url(#SVGID_248_);fill:#EAF0F7;}
+.st124{clip-path:url(#SVGID_250_);fill:#E8EFF6;}
+.st125{clip-path:url(#SVGID_252_);fill:#E6EDF6;}
+.st126{clip-path:url(#SVGID_254_);fill:#E3ECF5;}
+.st127{clip-path:url(#SVGID_256_);fill:#E1EAF4;}
+.st128{clip-path:url(#SVGID_258_);fill:#DEE8F3;}
+.st129{clip-path:url(#SVGID_260_);fill:#DBE6F2;}
+.st130{clip-path:url(#SVGID_262_);fill:#D8E4F1;}
+.st131{clip-path:url(#SVGID_264_);fill:#D4E2EF;}
+.st132{clip-path:url(#SVGID_266_);fill:#D1DFEE;}
+.st133{clip-path:url(#SVGID_268_);fill:#CDDCED;}
+.st134{clip-path:url(#SVGID_270_);fill:#C9DAEB;}
+.st135{clip-path:url(#SVGID_272_);fill:#C5D7EA;}
+.st136{clip-path:url(#SVGID_274_);fill:#C0D3E8;}
+.st137{clip-path:url(#SVGID_276_);fill:#BBD0E6;}
+.st138{fill:#333333;}
+.st139{fill:#FFFFFF;}
+.st140{fill:none;}
+.st141{fill:orange !important;}
+.st142{clip-path:url(#SVGID_278_);fill:#C3E6F1;}
+.st143{clip-path:url(#SVGID_280_);fill:#C3E6F1;}
+.st144{clip-path:url(#SVGID_282_);fill:#C2E5F1;}
+.st145{clip-path:url(#SVGID_284_);fill:#C1E4F0;}
+.st146{clip-path:url(#SVGID_286_);fill:#C0E3F0;}
+.st147{clip-path:url(#SVGID_288_);fill:#BFE2F0;}
+.st148{clip-path:url(#SVGID_290_);fill:#BEE1EF;}
+.st149{clip-path:url(#SVGID_292_);fill:#BDE0EF;}
+.st150{clip-path:url(#SVGID_294_);fill:#BCDFEE;}
+.st151{clip-path:url(#SVGID_296_);fill:#BBDEEE;}
+.st152{clip-path:url(#SVGID_298_);fill:#BADDEE;}
+.st153{clip-path:url(#SVGID_300_);fill:#B9DCED;}
+.st154{clip-path:url(#SVGID_302_);fill:#B8DBED;}
+.st155{clip-path:url(#SVGID_304_);fill:#B7DAED;}
+.st156{clip-path:url(#SVGID_306_);fill:#B6D9EC;}
+.st157{clip-path:url(#SVGID_308_);fill:#B5D9EC;}
+.st158{clip-path:url(#SVGID_310_);fill:#B4D8EC;}
+.st159{clip-path:url(#SVGID_312_);fill:#B3D7EB;}
+.st160{clip-path:url(#SVGID_314_);fill:#B2D6EB;}
+.st161{clip-path:url(#SVGID_316_);fill:#B1D5EA;}
+.st162{clip-path:url(#SVGID_318_);fill:#B0D4EA;}
+.st163{clip-path:url(#SVGID_320_);fill:#AFD3EA;}
+.st164{clip-path:url(#SVGID_322_);fill:#AED2E9;}
+.st165{clip-path:url(#SVGID_324_);fill:#ADD1E9;}
+.st166{clip-path:url(#SVGID_326_);fill:#ACD0E9;}
+.st167{clip-path:url(#SVGID_328_);fill:#ABCFE8;}
+.st168{clip-path:url(#SVGID_330_);fill:#AACEE8;}
+.st169{clip-path:url(#SVGID_332_);fill:#A9CDE8;}
+.st170{clip-path:url(#SVGID_334_);fill:#A8CCE7;}
+.st171{clip-path:url(#SVGID_336_);fill:#A6CBE7;}
+.st172{clip-path:url(#SVGID_338_);fill:#A5CAE6;}
+.st173{clip-path:url(#SVGID_340_);fill:#A4C9E6;}
+.st174{clip-path:url(#SVGID_342_);fill:#A3C8E6;}
+.st175{clip-path:url(#SVGID_344_);fill:#A2C7E5;}
+.st176{clip-path:url(#SVGID_346_);fill:#A1C6E5;}
+.st177{clip-path:url(#SVGID_348_);fill:#A0C5E5;}
+.st178{clip-path:url(#SVGID_350_);fill:#9FC4E4;}
+.st179{clip-path:url(#SVGID_352_);fill:#9EC3E4;}
+.st180{clip-path:url(#SVGID_354_);fill:#9DC2E4;}
+.st181{clip-path:url(#SVGID_356_);fill:#9CC1E3;}
+.st182{clip-path:url(#SVGID_358_);fill:#9BC0E3;}
+.st183{clip-path:url(#SVGID_360_);fill:#9ABFE2;}
+.st184{clip-path:url(#SVGID_362_);fill:#99BEE2;}
+.st185{clip-path:url(#SVGID_364_);fill:#98BEE2;}
+.st186{clip-path:url(#SVGID_366_);fill:#97BDE1;}
+.st187{clip-path:url(#SVGID_368_);fill:#96BCE1;}
+.st188{clip-path:url(#SVGID_370_);fill:#95BBE1;}
+.st189{clip-path:url(#SVGID_372_);fill:#94BAE0;}
+.st190{clip-path:url(#SVGID_374_);fill:#93B9E0;}
+.st191{clip-path:url(#SVGID_376_);fill:#92B8E0;}
+.st192{clip-path:url(#SVGID_378_);fill:#91B7DF;}
+.st193{clip-path:url(#SVGID_380_);fill:#90B6DF;}
+.st194{clip-path:url(#SVGID_382_);fill:#8FB5DE;}
+.st195{clip-path:url(#SVGID_384_);fill:#8EB4DE;}
+.st196{clip-path:url(#SVGID_386_);fill:#8DB3DE;}
+.st197{clip-path:url(#SVGID_388_);fill:#8CB2DD;}
+.st198{clip-path:url(#SVGID_390_);fill:#8BB1DD;}
+.st199{clip-path:url(#SVGID_392_);fill:#8BB1DD;}
+.st200{clip-path:url(#SVGID_394_);fill:#C3E6F1;}
+.st201{clip-path:url(#SVGID_396_);fill:#C3E6F1;}
+.st202{clip-path:url(#SVGID_398_);fill:#C2E5F1;}
+.st203{clip-path:url(#SVGID_400_);fill:#C1E4F0;}
+.st204{clip-path:url(#SVGID_402_);fill:#C0E3F0;}
+.st205{clip-path:url(#SVGID_404_);fill:#BFE2F0;}
+.st206{clip-path:url(#SVGID_406_);fill:#BEE1EF;}
+.st207{clip-path:url(#SVGID_408_);fill:#BDE0EF;}
+.st208{clip-path:url(#SVGID_410_);fill:#BCDFEE;}
+.st209{clip-path:url(#SVGID_412_);fill:#BBDEEE;}
+.st210{clip-path:url(#SVGID_414_);fill:#BADDEE;}
+.st211{clip-path:url(#SVGID_416_);fill:#B9DCED;}
+.st212{clip-path:url(#SVGID_418_);fill:#B8DBED;}
+.st213{clip-path:url(#SVGID_420_);fill:#B7DAED;}
+.st214{clip-path:url(#SVGID_422_);fill:#B6D9EC;}
+.st215{clip-path:url(#SVGID_424_);fill:#B5D9EC;}
+.st216{clip-path:url(#SVGID_426_);fill:#B4D8EC;}
+.st217{clip-path:url(#SVGID_428_);fill:#B3D7EB;}
+.st218{clip-path:url(#SVGID_430_);fill:#B2D6EB;}
+.st219{clip-path:url(#SVGID_432_);fill:#B1D5EA;}
+.st220{clip-path:url(#SVGID_434_);fill:#B0D4EA;}
+.st221{clip-path:url(#SVGID_436_);fill:#AFD3EA;}
+.st222{clip-path:url(#SVGID_438_);fill:#AED2E9;}
+.st223{clip-path:url(#SVGID_440_);fill:#ADD1E9;}
+.st224{clip-path:url(#SVGID_442_);fill:#ACD0E9;}
+.st225{clip-path:url(#SVGID_444_);fill:#ABCFE8;}
+.st226{clip-path:url(#SVGID_446_);fill:#AACEE8;}
+.st227{clip-path:url(#SVGID_448_);fill:#A9CDE8;}
+.st228{clip-path:url(#SVGID_450_);fill:#A8CCE7;}
+.st229{clip-path:url(#SVGID_452_);fill:#A6CBE7;}
+.st230{clip-path:url(#SVGID_454_);fill:#A5CAE6;}
+.st231{clip-path:url(#SVGID_456_);fill:#A4C9E6;}
+.st232{clip-path:url(#SVGID_458_);fill:#A3C8E6;}
+.st233{clip-path:url(#SVGID_460_);fill:#A2C7E5;}
+.st234{clip-path:url(#SVGID_462_);fill:#A1C6E5;}
+.st235{clip-path:url(#SVGID_464_);fill:#A0C5E5;}
+.st236{clip-path:url(#SVGID_466_);fill:#9FC4E4;}
+.st237{clip-path:url(#SVGID_468_);fill:#9EC3E4;}
+.st238{clip-path:url(#SVGID_470_);fill:#9DC2E4;}
+.st239{clip-path:url(#SVGID_472_);fill:#9CC1E3;}
+.st240{clip-path:url(#SVGID_474_);fill:#9BC0E3;}
+.st241{clip-path:url(#SVGID_476_);fill:#9ABFE2;}
+.st242{clip-path:url(#SVGID_478_);fill:#99BEE2;}
+.st243{clip-path:url(#SVGID_480_);fill:#98BEE2;}
+.st244{clip-path:url(#SVGID_482_);fill:#97BDE1;}
+.st245{clip-path:url(#SVGID_484_);fill:#96BCE1;}
+.st246{clip-path:url(#SVGID_486_);fill:#95BBE1;}
+.st247{clip-path:url(#SVGID_488_);fill:#94BAE0;}
+.st248{clip-path:url(#SVGID_490_);fill:#93B9E0;}
+.st249{clip-path:url(#SVGID_492_);fill:#92B8E0;}
+.st250{clip-path:url(#SVGID_494_);fill:#91B7DF;}
+.st251{clip-path:url(#SVGID_496_);fill:#90B6DF;}
+.st252{clip-path:url(#SVGID_498_);fill:#8FB5DE;}
+.st253{clip-path:url(#SVGID_500_);fill:#8EB4DE;}
+.st254{clip-path:url(#SVGID_502_);fill:#8DB3DE;}
+.st255{clip-path:url(#SVGID_504_);fill:#8CB2DD;}
+.st256{clip-path:url(#SVGID_506_);fill:#8BB1DD;}
+.st257{clip-path:url(#SVGID_508_);fill:#8BB1DD;}
+.st258{fill:#EB1C24;}
+.st259{fill:#8C8C8C;}
+.st260{fill:#595959;}
+.st261{fill:lightgrey;}
+.st262{fill: purple;}
+.st264{fill:#000100;}/*kolor napisów menu*/
+.st265{fill:#4067AF;}
+.st266{fill:#E92227;}
+
+/* ===================================================================================== */
+/* ===================== Boeing757  ==================================================== */
+.freeBC_757{fill: rgb(12, 77, 12)}/*Business Class- Boeing757*/
+.freeEP_757{fill:   rgb(10, 172, 10)}/*Economy Plus- Boeing757*/
+.btn_economy_757{
+	/* visibility: hidden; */
+	fill: 	rgb(176, 240, 116);
+	stroke:grey;stroke-width:2;
+	fill-opacity:0.8;
+}
+
+.cls-1,.cls-126{fill:none;}
+.cls-2{clip-path:url(#clip-path);}
+.cls-3{fill:#fff;}
+.cls-4{fill:#bcd1e7;}
+.cls-5{fill:#bfd3e8;}
+.cls-6{fill:#c1d5e9;}
+.cls-7{fill:#c4d7ea;}
+.cls-8{fill:#c7d8eb;}
+.cls-9{fill:#c9daec;}
+.cls-10{fill:#cbdced;}
+.cls-11{fill:#cedded;}
+.cls-12{fill:#d0dfee;}
+.cls-13{fill:#d2e0ef;}
+.cls-14{fill:#d4e2f0;}
+.cls-15{fill:#d6e3f0;}
+.cls-16{fill:#d8e5f1;}
+.cls-17{fill:#dae6f2;}
+.cls-18{fill:#dce7f3;}
+.cls-19{fill:#dee8f3;}
+.cls-20{fill:#e0eaf4;}
+.cls-21{fill:#e2ebf4;}
+.cls-22{fill:#e3ecf5;}
+.cls-23{fill:#e5edf6;}
+.cls-24{fill:#e6eef6;}
+.cls-25{fill:#e8eff7;}
+.cls-26{fill:#e9f0f7;}
+.cls-27{fill:#eaf1f8;}
+.cls-28{fill:#ecf2f8;}
+.cls-29{fill:#edf3f9;}
+.cls-30{fill:#eef3f9;}
+.cls-31{fill:#eff4f9;}
+.cls-32{fill:#f0f5fa;}
+.cls-33{fill:#f1f6fa;}
+.cls-34{fill:#f2f6fa;}
+.cls-35{fill:#f3f7fb;}
+.cls-36{fill:#f4f8fb;}
+.cls-37{fill:#f5f8fb;}
+.cls-38{fill:#f6f9fc;}
+.cls-39{fill:#f7f9fc;}
+.cls-40{fill:#f7fafc;}
+.cls-41{fill:#f8fafd;}
+.cls-42{fill:#f9fbfd;}
+.cls-43{fill:#fafbfd;}
+.cls-44{fill:#fafcfd;}
+.cls-45{fill:#fbfcfe;}
+.cls-46{fill:#fcfdfe;}
+.cls-47{fill:#fdfdfe;}
+.cls-48{fill:#fdfefe;}
+.cls-49{fill:#fefeff;}
+.cls-50{fill:#feffff;}
+.cls-51{fill:#fbfcfd;}
+.cls-52{fill:#f8fafc;}
+.cls-53{fill:#f4f7fb;}
+.cls-54{fill:#ebf1f8;}
+.cls-55{fill:#e4ecf5;}
+.cls-56{fill:#e1ebf4;}
+.cls-57{fill:#dfe9f3;}
+.cls-58{fill:#dce7f2;}
+.cls-59{fill:#d9e5f1;}
+.cls-60{fill:#d5e2f0;}
+.cls-61{fill:#cadbec;}
+.cls-62{fill:#c6d8ea;}
+.cls-63{fill:#c1d4e9;}
+.cls-64{fill:#333;} /* zewnętrzny obrys samolotu */
+.cls-65{fill:#999;} /* wewnętrzny obrys samolotu */
+.cls-66{clip-path:url(#clip-path-2);}
+.cls-67{fill:#c4e7f2;}
+.cls-68{fill:#c3e6f2;}
+.cls-69{fill:#c2e5f1;}
+.cls-70{fill:#c1e4f1;}
+.cls-71{fill:#c0e3f1;}
+.cls-72{fill:#bfe2f0;}
+.cls-73{fill:#bee1f0;}
+.cls-74{fill:#bde0ef;}
+.cls-75{fill:#bcdfef;}
+.cls-76{fill:#bbdeef;}
+.cls-77{fill:#baddee;}
+.cls-78{fill:#b9dcee;}
+.cls-79{fill:#b8dbee;}
+.cls-80{fill:#b7daed;}
+.cls-81{fill:#b6daed;}
+.cls-82{fill:#b5d9ed;}
+.cls-83{fill:#b4d8ec;}
+.cls-84{fill:#b3d7ec;}
+.cls-85{fill:#b2d6eb;}
+.cls-86{fill:#b1d5eb;}
+.cls-87{fill:#b0d4eb;}
+.cls-88{fill:#afd3ea;}
+.cls-89{fill:#aed2ea;}
+.cls-90{fill:#add1ea;}
+.cls-91{fill:#acd0e9;}
+.cls-92{fill:#abcfe9;}
+.cls-93{fill:#aacee9;}
+.cls-94{fill:#a9cde8;}
+.cls-95{fill:#a7cce8;}
+.cls-96{fill:#a6cbe7;}
+.cls-97{fill:#a5cae7;}
+.cls-98{fill:#a4c9e7;}
+.cls-99{fill:#a3c8e6;}
+.cls-100{fill:#a2c7e6;}
+.cls-101{fill:#a1c6e6;}
+.cls-102{fill:#a0c5e5;}
+.cls-103{fill:#9fc4e5;}
+.cls-104{fill:#9ec3e5;}
+.cls-105{fill:#9dc2e4;}
+.cls-106{fill:#9cc1e4;}
+.cls-107{fill:#9bc0e3;}
+.cls-108{fill:#9abfe3;}
+.cls-109{fill:#99bfe3;}
+.cls-110{fill:#98bee2;}
+.cls-111{fill:#97bde2;}
+.cls-112{fill:#96bce2;}
+.cls-113{fill:#95bbe1;}
+.cls-114{fill:#94bae1;}
+.cls-115{fill:#93b9e1;}
+.cls-116{fill:#92b8e0;}
+.cls-117{fill:#91b7e0;}
+.cls-118{fill:#90b6df;}
+.cls-119{fill:#8fb5df;}
+.cls-120{fill:#8eb4df;}
+.cls-121{fill:#8db3de;}
+.cls-122{fill:#8cb2de;}
+.cls-123{clip-path:url(#clip-path-3);}
+.cls-124{fill:#ec1c24;}
+.cls-125{fill:#8c8c8c;}  /*ikonki: lavatory, closet, galley */
+.cls-128{fill:#8c8c8c;}
+.cls-128{fill-rule:evenodd;}
+.cls-129{fill:#666;} /*obrysy siedzeń Business Class*/
+.cls-130{fill:#595959;} /*obrysy siedzeń Economy Plus*/
+.cls-132{fill:#000100;} /*NAPISY POD MENU */
+.cls-135{fill:#e92227;}
+
+// =============================
+.hidden{
+	visibility: hidden;
+	/* visibility: visible; */
+	/* display: none; */
+		} 
+.visible{
+	visibility: visible;
+	/* display: block;  */
+	z-index: 0;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+} 
+
+.prebook{fill: 	rgb(240, 116, 240);}
+
+
+
+

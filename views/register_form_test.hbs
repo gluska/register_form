@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formularz rejestracji użytkownika</title>
+    <meta name="description" content="Formaularz zawiera szereg metod walidacji wprowadzanych danych z wykorzystaniem Material Bootstrap Design oraz Validate.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    {{!-- ================ podpięcia CSS =================--}}
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+   
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap"> 
+ 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+   
+   <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+   
+    {{!-- my custom styles (optional)--}}
+    <link rel="stylesheet" type="text/css" href="./../assets/scss/register_test.css">
+   
+  
+  </head>
+  <body>
+  <div class="card mx-5 my-5 px-5 py-5">
+    <div class="card-header text-center" >
+      <h1>Formularz rejestracji użytkownika </h1>
+      <h6>(Validate.js)</h6>  
+
+    </div>
+<div class="card-body">
+<form id="main" class="form-horizontal" action="/example" method="post" novalidate>
+  
+  <div class="form-group row mb-0">
+    <div class="col-sm-8 md-form px-0">
+      <input id="email" class="form-control" type="email" name="email">
+      <label for="email" class="control-label">Email</label>
+    </div>
+    <div class="col-sm-4 messages"></div>
+  </div>
+  
+  <div class="form-group row mb-0">
+    <div class="col-sm-8 md-form px-0">
+      <input id="password" class="form-control" type="password" name="password">
+      <label for="password" class="control-label">Password</label>
+    </div>
+    <div class="col-sm-4 messages"></div>
+  </div>
+  <div class="form-group row mb-0">
+    <div class="col-sm-8 md-form px-0">
+      <input id="confirm-password" class="form-control" type="password" name="confirm-password">
+      <label class="control-label" for="confirm-password">Confirm password</label>
+    </div>
+    <div class="col-sm-4 messages"></div>
+  </div>
+  <div class="form-group row mb-0">
+    <div class="col-sm-8 md-form px-0">
+      <input id="username" class="form-control" type="text" name="username">
+      <label class="control-label" for="username">Username</label>
+    </div>
+    <div class="col-sm-4 messages">
+    </div>
+  </div>
+  {{!-- <div class="form-group row mb-0">
+    <div class="col-sm-8 md-form px-0">
+      <input id="birthdate" class="form-control" type="date" placeholder="YYYY-MM-DD" name="birthdate">
+      <label class="control-label" for="birthdate">Birthdate</label>
+    </div>
+    <div class="col-sm-4 messages"></div>
+  </div> --}}
+  {{!-- <div class="form-group row mb-0">
+    <div class="col-sm-8 px-0">
+      <select id="country" class="mdb-select md-form" name="country">
+        <option value="">Country</option>
+        <option value="BE">Belgium</option>
+        <option value="CA">Canada</option>
+        <option value="CN">China</option>
+        <option value="CZ">Czech Republic</option>
+        <option value="DK">Denmark</option>
+        <option value="EG">Egypt</option>
+        <option value="FR">France</option>
+        <option value="GR">Greece</option>
+        <option value="IN">India</option>
+        <option value="JP">Japan</option>
+        <option value="KE">Kenya</option>
+        <option value="PL">Poland</option>
+        <option value="PT">Portugal</option>
+        <option value="SE">Sweden</option>
+        <option value="CH">Switzerland</option>
+        <option value="VE">Venezuela</option>
+      </select>
+    </div>
+    <div class="col-sm-4 messages"></div>
+  </div> --}}
+  {{!-- <div class="form-group row mb-0">
+    <div class="col-sm-8 md-form px-0">
+      <input id="zip" class="form-control" type="text" name="zip">
+      <label class="control-label" for="zip">ZIP Code</label>
+    </div>
+    <div class="col-sm-4 messages"></div>
+  </div> --}}
+  {{!-- <div class="form-group row mb-0">
+    <div class="col-sm-8 md-form px-0">
+      <input id="number-of-children" class="form-control" type="number" name="number-of-children">
+      <label class="control-label" for="number-of-children">Number of children</label>
+    </div>
+    <div class="col-sm-4 messages"></div>
+  </div> --}}
+  <div class="form-group">
+    <div class="text-center pt-3">
+      <button type="submit" class="btn btn-dark"><h4>Submit</h4></button>
+    </div>
+  </div>
+</form>
+
+</div>
+
+    
+
+
+
+</div>
+
+{{!-- -------------------------    js scripts   ----------------------------- --}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"> </script>
+
+
+  
+  <!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+  <!-- Library we are trying to use today -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
+  
+  {{!-- linked my custom scripts (optional) --}}
+  <script src="./../js/register_test.js"></script>
+
+
+  </body>
+
+
+</html>
